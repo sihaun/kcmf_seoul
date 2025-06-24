@@ -1,0 +1,398 @@
+{
+  "10.1인치 미디어패드 T5(AGS2-L09)": {
+    "equipment_group": "스마트장비",
+    "model_name": "AGS2-L09"
+  },
+  "교육용 드로잉 툴(와콤 타블렛)": {
+    "equipment_group": "스마트장비",
+    "model_name": "CTL-6100WL"
+  },
+  "외장형 영상캡처보드(LS-HD-CAP2, LANStar)": {
+    "equipment_group": "스마트장비",
+    "model_name": "LS-HD-CAP2"
+  },
+  "이동형 17인치 필드 모니터": {
+    "equipment_group": "스마트장비",
+    "model_name": "LUM-171G"
+  },
+  "1인 미디어 복합 스위처": {
+    "equipment_group": "스마트장비",
+    "model_name": "Tricaster Mini(SDI)"
+  },
+  "이동형 그린 스크린": {
+    "equipment_group": "스마트장비",
+    "model_name": "LL LB7622"
+  },
+  "무전기": {
+    "equipment_group": "스마트장비",
+    "model_name": "DG-2000"
+  },
+  "헤드마운트 디스플레이(케이스 포함)": {
+    "equipment_group": "스마트장비",
+    "model_name": "Oculus Quest"
+  },
+  "PA용 오디오믹서(하드케이스 포함)": {
+    "equipment_group": "스마트장비",
+    "model_name": "X32 compact"
+  },
+  "소형 오디오 인터페이스": {
+    "equipment_group": "스마트장비",
+    "model_name": "SSL2"
+  },
+  "PA용 스피커": {
+    "equipment_group": "스마트장비",
+    "model_name": "PRO12D"
+  },
+  "마이크 스탠드": {
+    "equipment_group": "스마트장비",
+    "model_name": "마이크 스탠드"
+  },
+  "이동형 비디오 스위처(V-1HD, Roland)": {
+    "equipment_group": "스마트장비",
+    "model_name": "V-1HD"
+  },
+  "휴대용 모니터(newsync P156C POCKET, 비트엠)": {
+    "equipment_group": "스마트장비",
+    "model_name": "Newsync P156C POCKET"
+  },
+  "아이패드 8세대(128G)": {
+    "equipment_group": "스마트장비",
+    "model_name": "아이패드 8세대"
+  },
+  "대여용 Projector": {
+    "equipment_group": "스마트장비",
+    "model_name": "HF60LA"
+  },
+  "휴대용 빔프로젝터(케이스 포함)": {
+    "equipment_group": "스마트장비",
+    "model_name": "HF85LA"
+  },
+  "외부 상영용 Projector": {
+    "equipment_group": "스마트장비",
+    "model_name": "PJWU-101B"
+  },
+  "외부 체험, 중계용 TV": {
+    "equipment_group": "스마트장비",
+    "model_name": "60UB8500"
+  },
+  "PA 오디오 믹서": {
+    "equipment_group": "스마트장비",
+    "model_name": "Escort5000"
+  },
+  "무선 마이크": {
+    "equipment_group": "스마트장비",
+    "model_name": "BLX24R/SM58"
+  },
+  "오디오 컨트롤러": {
+    "equipment_group": "스마트장비",
+    "model_name": "artist mix"
+  },
+  "TVlogic모니터": {
+    "equipment_group": "스마트장비",
+    "model_name": "lvm-074w"
+  },
+  "스마트폰": {
+    "equipment_group": "스마트장비",
+    "model_name": "SM-G930S"
+  },
+  "팬텀2 + H3-3D 짐벌": {
+    "equipment_group": "스마트장비",
+    "model_name": "팬텀2 + H3-3D 짐벌"
+  },
+  "Flag Kit": {
+    "equipment_group": "스마트장비",
+    "model_name": "Flag Kit"
+  },
+  "무전기set": {
+    "equipment_group": "스마트장비",
+    "model_name": "FV736"
+  },
+  "스테디캠 SET": {
+    "equipment_group": "스마트장비",
+    "model_name": "Tiffen 스테디캠"
+  },
+  "노출계": {
+    "equipment_group": "스마트장비",
+    "model_name": "KFM-1100"
+  },
+  "전선릴": {
+    "equipment_group": "스마트장비",
+    "model_name": "베스토 전선릴"
+  },
+  "ColorChecker": {
+    "equipment_group": "스마트장비",
+    "model_name": "passport kit"
+  },
+  "미니집 Set": {
+    "equipment_group": "스마트장비",
+    "model_name": "SOLOZIP"
+  },
+  "동시관람 고급형 이어폰": {
+    "equipment_group": "스마트장비",
+    "model_name": "JBL SOUNDGEAR SENSE"
+  },
+  "동시관람 보급형 이어폰": {
+    "equipment_group": "스마트장비",
+    "model_name": "TAA1708"
+  },
+  "동시관람 AR글라스·단말기 SET": {
+    "equipment_group": "스마트장비",
+    "model_name": "Air2 & Beam Pro"
+  },
+  "동시관람AR글라스": {
+    "equipment_group": "스마트장비",
+    "model_name": "Air2"
+  },
+  "무선핀마이크set(D11)": {
+    "equipment_group": "녹음장비",
+    "model_name": "[Sony] UWP-D11"
+  },
+  "휴대용 녹음기A(pr7)": {
+    "equipment_group": "녹음장비",
+    "model_name": "[Yamaha] PR7"
+  },
+  "DSLR용 샷건 마이크": {
+    "equipment_group": "녹음장비",
+    "model_name": "[DEITY] v-mic D3 Pro"
+  },
+  "붐마이크 & 녹음기 set": {
+    "equipment_group": "녹음장비",
+    "model_name": "[RODE]NTG2 & [Zoom]H6"
+  },
+  "붐마이크 set": {
+    "equipment_group": "녹음장비",
+    "model_name": "[Sennheiser] MKH 416-P48"
+  },
+  "무선핀마이크set(D26)": {
+    "equipment_group": "녹음장비",
+    "model_name": "[Sony] UWP-D26"
+  },
+  "휴대용 녹음기B(H6)": {
+    "equipment_group": "녹음장비",
+    "model_name": "[Zoom] H6"
+  },
+  "소형AV믹서B형(ATEMmniPro)": {
+    "equipment_group": "녹음장비",
+    "model_name": "ATEM mini Pro"
+  },
+  "Speaker": {
+    "equipment_group": "녹음장비",
+    "model_name": "MSP-5"
+  },
+  "이동형 오디오 믹서(Q1002USB, Behringer)": {
+    "equipment_group": "녹음장비",
+    "model_name": "Q1002USB"
+  },
+  "유선 마이크": {
+    "equipment_group": "녹음장비",
+    "model_name": "SM7B"
+  },
+  "PA용 무선 마이크set(수신기포함)": {
+    "equipment_group": "녹음장비",
+    "model_name": "SLX4/SLX2/SM58X"
+  },
+  "오디오 무선 변환기(케이스 포함)": {
+    "equipment_group": "녹음장비",
+    "model_name": "XSW-D PORTABLE ENG"
+  },
+  "필드 녹음기(케이스, 메모리 카드 포함)": {
+    "equipment_group": "녹음장비",
+    "model_name": "H8"
+  },
+  "이동형 엠프(케이스, 스탠드 포함)": {
+    "equipment_group": "녹음장비",
+    "model_name": "LUCAS NANO 608i"
+  },
+  "Headset": {
+    "equipment_group": "녹음장비",
+    "model_name": "MDR-7506"
+  },
+  "무선마이크세트(BY-WM8 Pro-K2, Boya)": {
+    "equipment_group": "녹음장비",
+    "model_name": "BY-WM8 Pro-K2"
+  },
+  "무선 핀마이크 세트(수신기 포함)": {
+    "equipment_group": "녹음장비",
+    "model_name": "EW 100 G4 ME2"
+  },
+  "헤드셋": {
+    "equipment_group": "녹음장비",
+    "model_name": "PC 12 Headset"
+  },
+  "오디오 인터페이스": {
+    "equipment_group": "녹음장비",
+    "model_name": "M-track plus"
+  },
+  "소형 삼각대(1kg용)": {
+    "equipment_group": "촬영보조",
+    "model_name": "[DAiWA] SLIK F143"
+  },
+  "소형 삼각대(2kg용)": {
+    "equipment_group": "촬영보조",
+    "model_name": "[HPUSN] CT-328"
+  },
+  "대형 삼각대(8kg용)": {
+    "equipment_group": "촬영보조",
+    "model_name": "[OZEN] System 6CF2"
+  },
+  "중형 삼각대(3kg용)": {
+    "equipment_group": "촬영보조",
+    "model_name": "[ACEBIL] i605DX"
+  },
+  "모노포드(외발 삼각대)": {
+    "equipment_group": "촬영보조",
+    "model_name": "[Manfrotto] MVMXPRO500"
+  },
+  "LED조명(litepad,LP120C)": {
+    "equipment_group": "조명장비",
+    "model_name": "LP120C"
+  },
+  "Portable LED라이트": {
+    "equipment_group": "조명장비",
+    "model_name": "BLS-LED1000 ASV kit"
+  },
+  "동시녹음용 녹음기": {
+    "equipment_group": "조명장비",
+    "model_name": "tascam hd p-2"
+  },
+  "무선마이크set": {
+    "equipment_group": "조명장비",
+    "model_name": "BLX24R"
+  },
+  "유선마이크": {
+    "equipment_group": "조명장비",
+    "model_name": "beta58a"
+  },
+  "중대형 LED 조명 set": {
+    "equipment_group": "조명장비",
+    "model_name": "[LISHUAI] HS-120"
+  },
+  "소형 LED 조명 set": {
+    "equipment_group": "조명장비",
+    "model_name": "[Litra] Litra Pro"
+  },
+  "대형 LED 조명 set": {
+    "equipment_group": "조명장비",
+    "model_name": "[LISHUAI] HS-150"
+  },
+  "Portable LED라이트 set": {
+    "equipment_group": "조명장비",
+    "model_name": "BLS-LED1000 ASV kit"
+  },
+  "중소형 LED 조명 set": {
+    "equipment_group": "조명장비",
+    "model_name": "[유쾌한생각] LUXPAD 43H"
+  },
+  "빔프로젝터set": {
+    "equipment_group": "조명장비",
+    "model_name": "EH501"
+  },
+  "영상무선송수신기(hollyland,mars400s)": {
+    "equipment_group": "촬영보조",
+    "model_name": "mars400s"
+  },
+  "중형 스테빌라이저": {
+    "equipment_group": "촬영보조",
+    "model_name": "RONIN 2 프로페셔널 콤보"
+  },
+  "중형 전동 슬라이더 키트": {
+    "equipment_group": "촬영보조",
+    "model_name": "V5 PRO LONG"
+  },
+  "소형 전동 슬라이드": {
+    "equipment_group": "촬영보조",
+    "model_name": "SLIDERONE Pro v2"
+  },
+  "수동 슬라이드": {
+    "equipment_group": "촬영보조",
+    "model_name": "KONOVA K7"
+  },
+  "바퀴형 슬라이드": {
+    "equipment_group": "촬영보조",
+    "model_name": "radial dolly KRD-2012"
+  },
+  "휴대용 프롬프터": {
+    "equipment_group": "촬영보조",
+    "model_name": "TP-300"
+  },
+  "DSLR 촬영용 짐벌(포커스 모터 포함)": {
+    "equipment_group": "촬영보조",
+    "model_name": "ronin-S 스탠더드 키트"
+  },
+  "고급형 캠코더 모니터(케이스 포함)": {
+    "equipment_group": "촬영보조",
+    "model_name": "Video Assist 4K (7\")"
+  },
+  "고급형 캠코더 C (HD/4K UHD)": {
+    "equipment_group": "촬영보조",
+    "model_name": "PWX-FS7"
+  },
+  "고급형 캠코더 A (4K UHD)": {
+    "equipment_group": "촬영보조",
+    "model_name": "HC-X1000"
+  },
+  "고급형 캠코더 B (4K UHD)": {
+    "equipment_group": "촬영보조",
+    "model_name": "AG-DVX200"
+  },
+  "스마트폰 촬영용 짐벌": {
+    "equipment_group": "촬영보조",
+    "model_name": "[DJI] OSMO MOBILE 4"
+  },
+  "고급형 캠코더": {
+    "equipment_group": "촬영장비",
+    "model_name": "EOS C500 Mark II"
+  },
+  "디지털카메라(DSLR 700D)": {
+    "equipment_group": "촬영장비",
+    "model_name": "[Canon] EOS 700D"
+  },
+  "소형 캠코더(R62)": {
+    "equipment_group": "촬영장비",
+    "model_name": "[canon] HF-R62"
+  },
+  "gopro Hero4 Black": {
+    "equipment_group": "촬영장비",
+    "model_name": "CHDHC-401"
+  },
+  "파나소닉_중급형 캠코더B(AG-CX10)": {
+    "equipment_group": "촬영장비",
+    "model_name": "[Panasonic] AG-CX10"
+  },
+  "액션 캠코더": {
+    "equipment_group": "촬영장비",
+    "model_name": "[GoPro] HERO 8"
+  },
+  "짐벌 일체형 캠코더": {
+    "equipment_group": "촬영장비",
+    "model_name": "[DJI] OSMO POCKET"
+  },
+  "소니_중급형 캠코더A(PXW-X70)": {
+    "equipment_group": "촬영장비",
+    "model_name": "[Sony] PXW-X70"
+  },
+  "미러리스 카메라": {
+    "equipment_group": "촬영장비",
+    "model_name": "[SONY] ILCE-α6600"
+  },
+  "노트북컴퓨터 (HP)": {
+    "equipment_group": "스마트장비",
+    "model_name": "빅터스16-R1131TX (윈.포함)"
+  },
+  "찾아가는 교육용 노트북 (영상편집용 노트북)": {
+    "equipment_group": "스마트장비",
+    "model_name": "15N530-PH7OK"
+  },
+  "Mac Notebook": {
+    "equipment_group": "스마트장비",
+    "model_name": "Mac Notebook"
+  },
+  "노트북": {
+    "equipment_group": "스마트장비",
+    "model_name": "15N365-K.AA7"
+  },
+  "https://kcmf.or.kr/_mngr_/module/CENTER040400_equipment_info_view.do?ncode=": {
+    "equipment_group": null,
+    "model_name": null
+  }
+}
