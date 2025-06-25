@@ -1,3 +1,3 @@
-pip install pyinstaller
+pip install pyinstaller thinter tempfile openpyxl pandas
 
-pyinstaller main.spec
+pyinstaller 장비운영실적.spec
