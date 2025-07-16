@@ -65,19 +65,23 @@ class MainFrame(tk.Frame):
         self.name_var = tk.StringVar()
         tk.Entry(frame_name, textvariable=self.name_var, width=20).pack(side=tk.LEFT)
 
-        # 이전 저장값 불러오기
+        # settings.json 불러오기
+        self.settings_path = "config/settings.json"
         try:
-            with open("config/settings.json", "r", encoding="utf-8") as f:
+            with open(self.settings_path, "r", encoding="utf-8") as f:
                 saved = json.load(f)
                 self.name_var.set(saved.get("manager_name", ""))
+                self.master.source_path = saved.get("source_path", "")
+                self.master.target_path = saved.get("target_path", "")
         except:
             pass
 
-
-        # 소스 선택
         self.source_label = self.create_file_selector(frame_top, "장비운영실적 파일 선택", self.select_source)
-        # 타겟 선택
+        self.source_label.config(text=self.master.source_path or "(경로 없음)")
+
         self.target_label = self.create_file_selector(frame_top, "양식 파일 선택", self.select_target)
+        self.target_label.config(text=self.master.target_path or "(경로 없음)")
+
 
         # 처리 시작 버튼
         tk.Button(self, text="처리 시작", command=self.start_process).pack(pady=5)
@@ -94,6 +98,26 @@ class MainFrame(tk.Frame):
         # 출력창
         self.output_text = tk.Text(self, height=10)
         self.output_text.pack(fill="both", expand=True, padx=10, pady=10)
+
+    def save_settings(self):
+        os.makedirs("config", exist_ok=True)
+        data = {
+            "manager_name": self.name_var.get(),
+            "source_path": self.master.source_path,
+            "target_path": self.master.target_path
+        }
+        # equipment_path는 ResetFrame 쪽에서 저장함
+        try:
+            with open(self.settings_path, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+                if "equipment_path" in existing:
+                    data["equipment_path"] = existing["equipment_path"]
+        except:
+            pass
+
+        with open(self.settings_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+
 
     def create_file_selector(self, parent, text, command):
         frame = tk.Frame(parent)
@@ -115,6 +139,7 @@ class MainFrame(tk.Frame):
                 path = xlsx_path
             self.source_label.config(text=path)
             self.master.source_path = path
+            self.save_settings()
 
     def select_target(self):
         path = filedialog.askopenfilename(title="양식 파일 선택", filetypes=[("Excel files", "*.xlsx *.xls")])
@@ -128,6 +153,7 @@ class MainFrame(tk.Frame):
                 path = xlsx_path
             self.target_label.config(text=path)
             self.master.target_path = path
+            self.save_settings()
 
     def start_process(self):
         if not self.master.source_path or not self.master.target_path:
@@ -162,21 +188,23 @@ class MainFrame(tk.Frame):
             row += 1
 
         with open("config/equipment.json", "r", encoding="utf-8") as f:
-            config_data = json.load(f)
+            try:
+                config_data = json.load(f)
+                target_pointer = 4
+                manager_name = self.master.manager_name
+                for source_pointer in range(5, cnt + 5):
+                    paste_equipment(manager_name, config_data, ws_source, ws_target, source_pointer, target_pointer)
+                    target_pointer += 1
 
-        target_pointer = 4
-        manager_name = self.master.manager_name
-        for source_pointer in range(5, cnt + 5):
-            paste_equipment(manager_name, config_data, ws_source, ws_target, source_pointer, target_pointer)
-            target_pointer += 1
+                    rate = (source_pointer - 4) * 100 // cnt
+                    self.progress_bar["value"] = rate
+                    self.progress_label.config(text=f"{rate}% 완료")
+                    self.update_idletasks()
 
-            rate = (source_pointer - 4) * 100 // cnt
-            self.progress_bar["value"] = rate
-            self.progress_label.config(text=f"{rate}% 완료")
-            self.update_idletasks()
-
-        wb_target.save(target_path)
-        print("처리 완료!")
+                wb_target.save(target_path)
+                print("처리 완료!")
+            except:
+                print("장비 종류 파일이 설정되지 않았습니다. '재설정' 으로 이동하여 장비 파일을 설정해주세요.")
 
 class ResetFrame(tk.Frame):
     def __init__(self, master):
@@ -187,6 +215,16 @@ class ResetFrame(tk.Frame):
         tk.Button(self, text="장비종류xlsx 선택", command=self.select_file).pack(pady=5)
         self.file_label = tk.Label(self, text="(파일 없음)")
         self.file_label.pack()
+
+        try:
+            with open("config/settings.json", "r", encoding="utf-8") as f:
+                saved = json.load(f)
+                equipment_path = saved.get("equipment_path", "")
+                if equipment_path:
+                    self.file_label.config(text=equipment_path)
+                    self.source_path = equipment_path
+        except:
+            pass
 
         # 실행 버튼
         tk.Button(self, text="재설정", command=self.start_reset).pack(pady=5)
@@ -216,6 +254,20 @@ class ResetFrame(tk.Frame):
                 path = xlsx_path
             self.file_label.config(text=path)
             self.source_path = path
+            os.makedirs("config", exist_ok=True)
+
+            # 기존 설정 불러와 병합
+            settings_path = "config/settings.json"
+            data = {"equipment_path": path}
+            try:
+                with open(settings_path, "r", encoding="utf-8") as f:
+                    existing = json.load(f)
+                    data.update(existing)
+            except:
+                pass
+
+            with open(settings_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
 
     def start_reset(self):
         if not hasattr(self, 'source_path'):
